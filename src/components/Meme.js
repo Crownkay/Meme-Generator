@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import memeData from "../memeData"
 
-function Input() {
+function Meme() {
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
@@ -36,4 +36,4 @@ function Input() {
   );
 }
 
-export default Input;
+export default Meme;

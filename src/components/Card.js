@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import starlight from '../images/star.jpg'
 import starfull from "../images/starfull.png"
+import Star from "./Star";
 
 export default function Card() {
   const [contact, setContact] = useState({
@@ -25,7 +26,7 @@ export default function Card() {
         </p>
         <p>Phone-Number: {contact.phone}</p>
         <p>Email: {contact.email}</p>
-        <img src={star} onClick={toggleIcon} alt="/" width="100px" height="100px" />
+       <Star isFilled = {star} handleClick={toggleIcon} />
       </article>
     </main>
   );
