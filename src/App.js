@@ -1,14 +1,17 @@
 import Input from "./components/Input";
 import Navbar from "./components/Navbar";
-import State from "./components/State";
+//import Card from "./components/Card"
+// import State from "./components/State";
 
 
 function App() {
   return (
     <div>
       <Navbar />
-      {/* <Input /> */}
-      <State />
+      <Input />
+      
+      {/*<Card />
+      <State />*/}
       
     </div>
   );

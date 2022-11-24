@@ -1,19 +1,20 @@
-import React, {useState} from "react"
+import React,{useState} from "react";
 
-function State(){
-  const [thingsArray, SetThingsArray] = useState(["Thing 1", "Thing 2"])
-  function addItem (){
-    SetThingsArray(prevThingsArray => {
-      return [...prevThingsArray, `Thing ${prevThingsArray.length + 1}`]
+export default function State(){
+  const [thingsArray, setThingsArray] = useState(["Thing 1", "Thing 2"])
+
+  function addItem(){
+    setThingsArray(prevThings =>{
+      return [...prevThings, `Thing ${prevThings.length + 1}`]
     })
   }
-  const thingsElems = thingsArray.map(item => <p key = {item}>{item}</p>)
+
+  const thingsElem = thingsArray.map(things => <p key = {things}>{things}</p>)
+
   return (
-    <div>
-      <button onClick={addItem}>Add item</button>
-      {thingsElems}
-    </div>
+    <>
+      <button onClick={addItem}>Add Item</button>
+      {thingsElem}
+    </>
   )
 }
-
-export default State
