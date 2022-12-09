@@ -14,7 +14,7 @@ export default function Card() {
   let star = contact.isFavorite ? starfull : starlight
   
   function toggleIcon(){
-    setContact(prevContact =>{
+    setContact(prevContact => {
       return {...prevContact, isFavorite: !prevContact.isFavorite}
     })
   }
