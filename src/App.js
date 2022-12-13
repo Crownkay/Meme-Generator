@@ -7,7 +7,8 @@
 // import AddItem from "./components/AddItem";
 // import Box from "./components/Box"
 
-import Form from "./components/Form";
+// import Form from "./components/Form";
+import Signup from "./components/Signup";
 
 // import Joke from "./components/Joke";
 // import Message from "./components/Message";
@@ -18,8 +19,8 @@ function App() {
   // const [name, setName] = useState("Joe")
   return (
     <div>
-      <Form />
-     {/* <Joke /><Message />
+     <Signup />
+     {/* <Joke /><Message /> <Form />
       <AddItem />
       <Counter /> <Body fname={name}/>
       <Header fname={name} />
