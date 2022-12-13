@@ -20,12 +20,13 @@ export default function Signup() {
   function handleSubmit(event) {
     event.preventDefault();
     if (info.password === info.confirmPassword) {
-      console.log("Successfully sign up");
+      alert("Successfully signed up");
     } else {
-      console.log("Password do not match, please retry");
+      alert("Password do not match, please retry");
+      return
     }
     if (info.newsLetter === true) {
-      console.log("Thanks for signing up for oue newsletter!");
+      alert("Thanks for signing up for our newsletter!");
     }
     console.log(info);
   }
@@ -58,7 +59,7 @@ export default function Signup() {
           type="checkbox"
           id="newsletter"
           name="newsLetter"
-          value={info.newsLetter === "checkbox"}
+          checked={info.newsLetter}
           onChange={handleChange}
         />
         <label htmlFor="newsletter">I want to join the newsletter </label>

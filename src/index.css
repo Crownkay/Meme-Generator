@@ -10,9 +10,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  padding: 50px;
-  background-color: purple;
+  
 }
+
 main{
   margin: 20px;
 }
@@ -46,7 +46,7 @@ input[type="email"],input[type="text"],input[type="password"], textarea{
   border: 1px solid #444;
   height: 50px;
   max-width: 400px;
-  font-size: 24px;
+  font-size: 18px;
 }
 input[type="radio"]{
   margin: 0 15px;
@@ -69,6 +69,26 @@ button{
   background-color: purple;
   outline: none;
   border: none;
+}
+.windowTracker-container{
+  padding: 50px;
+  background-color: #ff875b;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.windowTracker-container_button{
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  background-color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 /* .boxes{
   display: grid;
